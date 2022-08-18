@@ -1,0 +1,15 @@
+<form method="POST" enctype="multipart/form-data" action="">
+
+	<!-- Security token -->
+	{% csrf_token %}
+
+	<!-- Using the formset -->
+	{{ form.as_p }}
+
+    <!-- <label for="fname">Betting Id:</label><br>
+    <input type="text"  name="fname"><br>
+    <label for="lname">Betting amount:</label><br>
+    <input type="text"  name="lname"> -->
+	
+	<input type="submit" value="Submit">
+</form>
